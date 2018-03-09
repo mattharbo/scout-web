@@ -1,0 +1,288 @@
+/***************************/
+/*Style page setup*/
+/***************************/
+
+html {
+box-sizing: border-box;
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+/*font-family: 'Nunito Sans', sans-serif;*/
+font-family: "Roboto",Helvetica,Arial,sans-serif;/*twitter like*/
+font-size: 11px;
+font-weight: 400;
+background-color: #F6F6F6;
+box-sizing: border-box;
+/*height: 100%;*/
+}
+
+a:link {
+color: none;
+text-decoration: none;
+}
+
+a:visited {i
+color: none;
+text-decoration: none;
+}
+
+a:hover {
+color: none;
+text-decoration: none;
+transition: all .3s ease-out;
+}
+
+a:active {
+color: black;
+text-decoration: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+ul {
+list-style-type: none;
+}
+
+
+#header{
+  position: fixed;
+  top: 0;
+  height: 45px;
+  width: 100%;
+  z-index: 99;
+  background-color: #1B275F;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(182,182,182,1);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(182,182,182,1);
+  box-shadow: 0px 1px 2px 0px rgba(182,182,182,1);
+}
+
+.header{
+  background-color: lightblue;
+}
+
+
+.wrapper {
+
+	max-width: 1186px;
+	/* width: 95%; */
+	margin: 55px auto;
+  background-color: pink;
+}
+
+#hometeamdiv{
+  float: left;
+  width: 270px;
+  height: 100px;
+  /* background-color: yellow; */
+  margin-right: 15px
+}
+
+.player_template{
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  background-color: #FBFBFB;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(182,182,182,1);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(182,182,182,1);
+  box-shadow: 0px 1px 2px 0px rgba(182,182,182,1);
+}
+
+.player_template:hover{
+  background-color: #F1F1F1;
+  cursor: pointer;
+  /* -webkit-transform: translate(0,-1px); /* Safari */ */
+  /* transform: translate(0,-1px); */
+}
+
+.player_template:active{
+  /* -webkit-transform: translate(0,1px); /* Safari */
+  /* transform: translate(0,-1px); */
+}
+
+#playernamehome{
+  position: absolute;
+  display: block;
+  margin: 8px 0 0 20px;
+}
+
+#playernameaway{
+  position: relative;
+  float: right;
+  margin: 8px 20px 0 0;
+}
+
+#playerpositionhome{
+  position: absolute;
+  margin: 29px 0 0 20px;
+}
+
+#playerpositionaway{
+  float: right;
+  margin: 29px -90px 0 0;
+}
+
+#playercardhome{
+  float: right;
+  border-radius: 0 4px 4px 0;
+}
+
+#playerfirstcardhome{
+  float: right;
+}
+
+#playersubsitutionhome{
+  float: right;
+  margin: 13px 15px 0 0;
+  /* margin: 13px 0 0 236px; */
+}
+
+#playergoalhome{
+  float: right;
+  margin: 11px 15px 0 0;
+  /* margin: 11px 0 0 206px; */
+  background: url(../img/goalplayer@x1.png) no-repeat scroll center top;
+  background-size: 13px 13px;
+}
+
+#playergoalaway{
+  display: inline-block;
+  margin: 11px 0 0 15px;
+  background: url(../img/goalplayer@x1.png) no-repeat scroll center top;
+  background-size: 13px 13px;
+}
+
+#playersubsitutionaway{
+  display: inline-block;
+  margin: 13px 0 0 15px;
+}
+
+#playercardaway{
+  float: left;
+  border-radius: 4px 0 0 4px;
+}
+
+#playerfirstcardaway{
+  float: left;
+}
+
+.playername{
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.playerposition{
+  font-size: 11px;
+  font-weight: 400;
+  color: #ABABAB;
+}
+
+.card{
+  width: 5px;
+  height: 100%;
+}
+
+.yellowcard{
+  background-color: #F5E500;
+}
+
+.redcard{
+  background-color: #F52600;
+}
+
+.sub{
+  width: 14px;
+  font-size: 11px;
+  line-height: 39px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.playerin{
+  background: url(../img/inarrow@x1.png) no-repeat scroll center top;
+  background-size: 14px 8px;
+}
+
+.playerout{
+  background: url(../img/outarrow@x1.png) no-repeat scroll center top;
+  background-size: 14px 8px;
+}
+
+.goalbox{
+  width: 14px;
+  font-size: 11px;
+  line-height: 44px;
+  text-align: center;
+  font-weight: 700;
+}
+
+#centerdiv{
+  float: left;
+  width: 616px;
+  height: 398px;
+  border-radius: 4px;
+  background: url(../img/grass@x1.png) no-repeat scroll center top;
+  background-size: 616px 398px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(182,182,182,1);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(182,182,182,1);
+  box-shadow: 0px 1px 2px 0px rgba(182,182,182,1);
+}
+
+#fieldlines{
+  position: relative;
+  width: 594px;
+  height: 377px;
+  margin: 10px auto;
+  background: url(../img/lines@x1.png) no-repeat scroll center top;
+  background-size: 594px 377px;
+}
+
+#awayteamdiv{
+  float: left;
+  width: 270px;
+  height: 100px;
+  margin-left: 15px;
+  /* background-color: purple; */
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+  .playerin{
+    background: url(../img/inarrow@x2.png) no-repeat scroll center top;
+    background-size: 14px 8px;
+  }
+
+  .playerout{
+    background: url(../img/outarrow@x2.png) no-repeat scroll center top;
+    background-size: 14px 8px;
+  }
+
+  #playergoalhome{
+    background: url(../img/goalplayer@x2.png) no-repeat scroll center top;
+    background-size: 13px 13px;
+  }
+
+  #playergoalaway{
+    background: url(../img/goalplayer@x2.png) no-repeat scroll center top;
+    background-size: 13px 13px;
+  }
+
+  #centerdiv{
+    background: url(../img/grass@x2.png) no-repeat scroll center top;
+    background-size: 616px 398px;
+  }
+
+  #fieldlines{
+    background: url(../img/lines@x2.png) no-repeat scroll center top;
+    background-size: 594px 377px;
+  }
+}
